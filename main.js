@@ -23,7 +23,7 @@ for (i = 0; 1 < objects.length; i++)
 {
 document.getElementById("status").innerHTML = "Status : Object Detected";
 fill("#FF0000");
-percent = floor(object[i].confidence * 100);
+percent = floor(objects[i].confidence * 100);
 text(objects[i].label + "" + percent + "%", objets[i].x+ 15, obejcts[i].y+ 15);
 noFill();
 stroke("FF0000");
